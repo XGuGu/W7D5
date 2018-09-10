@@ -6,6 +6,10 @@ const App = () => (
   <div>
     <h1>Bench BnB</h1>
     <GreetingContainer />
+    <Switch>
+      <Route path="/login" component={LogInFormContainer} />
+      <Route path="/signup" component={SignUpFormContainer} />
+    </Switch>
   </div>
 );
 
