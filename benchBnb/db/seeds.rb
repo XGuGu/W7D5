@@ -7,4 +7,28 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+User.delete_all
+Bench.delete_all
+
 u1 = User.create({username: 'starwar', password_digest: '123123123'})
+
+
+b1 = Bench.create(
+  {
+  description: 'bench one',
+  seating: 2,
+  lat: 99,
+  lng: 99,
+  picture_url: 'http://www.wwoeooeoe.eeweewwe'
+  }
+)
+
+b2 = Bench.create(
+  {
+  description: 'bench one',
+  seating: 3,
+  lat: 89,
+  lng: 89,
+  picture_url: 'http://www.wqwwqqwwwwe'
+  }
+)
