@@ -18,12 +18,12 @@ class User < ApplicationRecord
 
   def password=(password)
     @password = password
-    debugger
+    # debugger
     self.password_digest = BCrypt::Password.create(password)
   end
 
   def valid_password?(password)
-    debugger
+    # debugger
     bcryped_pw = BCrypt::Password.new(self.password_digest)
     bcryped_pw.is_password?(password)
   end
